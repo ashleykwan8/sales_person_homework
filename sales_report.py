@@ -12,10 +12,9 @@ for line in f: #loop through each line of the file
     salesperson = entries[0] #overwrite salesperson as the first element in entries 
     melons = int(entries[2]) #overwrite melons as the second element and change type to int
 
-    if salesperson in salespeople:
-        position = salespeople.index(salesperson)
-
-        melons_sold[position] += melons
+    if salesperson in salespeople: #check if salesperson is in salespeople list
+        position = salespeople.index(salesperson)  #position is the index # of salespeople 
+        melons_sold[position] += melons #melons_sold list index + number of melons 
     else:
         salespeople.append(salesperson)
         melons_sold.append(melons)
