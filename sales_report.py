@@ -16,9 +16,9 @@ for line in f: #loop through each line of the file
         position = salespeople.index(salesperson)  #position is the index # of salespeople 
         melons_sold[position] += melons #melons_sold list index + number of melons 
     else:
-        salespeople.append(salesperson)
-        melons_sold.append(melons)
+        salespeople.append(salesperson) #add salesperson to salespeople list
+        melons_sold.append(melons) #add melons to melons_sold list 
 
 
-for i in range(len(salespeople)):
-    print(f'{salespeople[i]} sold {melons_sold[i]} melons')
+for i in range(len(salespeople)): #for index of the range of the length of salespeople list 
+    print(f'{salespeople[i]} sold {melons_sold[i]} melons') #print salesperson sold number of melons 
