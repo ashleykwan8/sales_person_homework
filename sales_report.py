@@ -7,10 +7,10 @@ melons_sold = [] #empty list for melons sold
 f = open('sales-report.txt')#oepn the sales-report.txt file
 for line in f: #loop through each line of the file
     line = line.rstrip() #strip the whitespace 
-    entries = line.split('|') #split each element at the pipe line |
+    entries = line.split('|') # entries = split each element at the pipe line |
 
-    salesperson = entries[0]
-    melons = int(entries[2])
+    salesperson = entries[0] #overwrite salesperson as the first element in entries 
+    melons = int(entries[2]) #overwrite melons as the second element and change type to int
 
     if salesperson in salespeople:
         position = salespeople.index(salesperson)
